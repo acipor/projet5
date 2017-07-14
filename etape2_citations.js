@@ -1,14 +1,16 @@
+// 1er génerateur
 var debut1 = ["Quelle que soit l'orientation présente, ", "Malgré cette rigueur générale, ", "Compte tenu de la dualité de la situation présente, "];
     
 var milieu1 = ["il convient de comprendre toutes les issues imaginables, ", "on ne peut se passer de façonner chacune des actions s'offrant à nous, ", "il faut de toute urgence avoir à l'esprit toutes les décisions évidentes, "];
     
 var fin1 = ["dans une perspective correcte.","parce qu'il s'agit de notre dernière chance.", "en prenant toutes les précautions qui s'imposent."];
 
-var debut2 = ["debut2, ", "Malgré cette rigueur générale, ", "Compte tenu de la dualité de la situation présente, "];
+// 2eme génerateur
+var debut2 = ["debut2, ", "debut22, ", "debut2222, "];
     
-var milieu2 = ["milieu2, ", "on ne peut se passer de façonner chacune des actions s'offrant à nous, ", "il faut de toute urgence avoir à l'esprit toutes les décisions évidentes, "];
+var milieu2 = ["milieu2, ", "milieu2222, ", "milieu2222 22 222, "];
     
-var fin2 = ["fin2.","parce qu'il s'agit de notre dernière chance.", "en prenant toutes les précautions qui s'imposent."];
+var fin2 = ["fin2.","fin 222 22.", "fin 33 333333 ."];
 
 // objet citation
 var citation = {
@@ -67,16 +69,16 @@ switch(nbCitations)    {
     case 4:
     case 5:
     // saisie du numero type generateur de citations  
-        var numeroPhrase = 0;
+       var numeroPhrase = 0;
        while (numeroPhrase != 1 && numeroPhrase != 2) {
            numeroPhrase= Number(prompt("Entrer le numéro du type générateur de citation (1 ou 2) : "));
-                                                            } // while
+                                                      } // while numeroPhrase
         
         // générer nb citations dans un tableau
         var tableau_citation = [];
         tableau_citation = generate_citation(nbCitations,numeroPhrase); 
         // affichage des citations
-        console.log("\Voici les "+ nbCitations +" citations générées avec le type de générateur no " + numeroPhrase);   
+        console.log("\Voici "+ nbCitations +" citation(s) générée(s) avec le type de générateur no: " + numeroPhrase);   
         var i;
         var cit =[];
         for (i = 0; i < nbCitations; i++) { 
@@ -91,5 +93,5 @@ switch(nbCitations)    {
            break;
                     } // switch
                         
-} // while
+} // while nbCitations
  		
