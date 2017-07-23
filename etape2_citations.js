@@ -45,13 +45,15 @@ function random(tableau) {
     return Math.floor(Math.random() * tableau.length);   
 }
 
-// saisie nbre de citations et le numero du type generateur
+// saisie du nombre de citations
 var nbCitations;
-while ( nbCitations !== 0 ) {
+while ( nbCitations !== 0 ) 
+{
 nbCitations = Number(prompt ("Entrer le nombre de citations à générer de 1 à 5 ( 0 pour finir ):"));
-switch(nbCitations)    {
+    
+switch(nbCitations) {
     case 0:  
-        console.log("Fin");
+        console.log("Fin.");
         break;
     case 1:
     case 2:
@@ -62,28 +64,25 @@ switch(nbCitations)    {
        var typeGen = 0;
        while (typeGen != 1 && typeGen != 2) {
            typeGen= Number(prompt("Entrer le numéro du type générateur de citation (1 ou 2) : "));
-                                                      } // while typeGen
+                                                      } // fin while typeGen
         // générer les citations
-        var numPhrase;
-        numPhrase = typeGen - 1;
+        var numGen;
+        numGen = typeGen - 1; // numéro du type generateur de phrases
         console.log("\nVoici "+ nbCitations +" citation(s) générée(s) avec le type de générateur no: " + typeGen ); 
         // boucle sur le nb citations
         for (j = 0; j < nbCitations; j++) { 
                 var phrase1 = "";
                 var position1;
-                        for ( var i = 0 ;i < typeGenerateur[numPhrase].length ; i++) {
-                                    position1 = random (typeGenerateur[numPhrase][i]);    
-                                    phrase1 =  phrase1 + " " + typeGenerateur[numPhrase][i][position1];
+                        for ( var i = 0 ;i < typeGenerateur[numGen].length ; i++) {
+                                    position1 = random (typeGenerateur[numGen][i]);    
+                                    phrase1 =  phrase1 + " " + typeGenerateur[numGen][i][position1];
                         }
                 console.log( phrase1);
-        } // nb citations
+                                           } // fin for nb citations
         break;
-        
     default:
           console.log ("Nombre invalide : essayer de nouveau un nombre entre 0 et 5.")
            break;
-                    } // switch
-} // while nbCitations
-
-
-
+                    } // fin switch nbCitations
+    
+} // fin while nbCitations

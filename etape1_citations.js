@@ -25,10 +25,12 @@ function random(tableau) {
 // générer la  citation
 var phrase1 = "";
 var position1;
-// 3 éléments dans le tableau
-for ( var i = 0 ;i < 3 ; i++) {
+
+// boucle sur les éléments du tableau
+for ( var i = 0 ;i < typeGenerateur.length ; i++) {
                                     position1 = random (typeGenerateur[i]);    
                                     phrase1 =  phrase1 + " " + typeGenerateur[i][position1];
 }
+// affichage du résultat
 console.log("\nVoici la citation générée: ");
 console.log(phrase1);
