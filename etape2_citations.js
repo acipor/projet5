@@ -1,3 +1,9 @@
+// ce programme génére des citations configurables
+// Choisir le nombre de citations générées (de 1 à 5)
+// Choisir entre 2 types de générateurs de citations (vous devrez donc avoir 2 ensembles de phrases)
+// Une fois les citations générées, proposer de générer de nouvelles citations ou d'arrêter là le programme
+
+// tableau de 2 ensembles de phrases
 var typeGenerateur = [
     // generateur 1
     [ 

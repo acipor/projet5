@@ -1,3 +1,6 @@
+// ce programme génére une citation  qui est la combinaison de 3 morceaux de phrases 
+
+// tableau de morceaux de phrases
 var typeGenerateur = [
     [
     "Quelle que soit l'orientation présente", 
@@ -22,7 +25,7 @@ function random(tableau) {
     return Math.floor(Math.random() * tableau.length);   
 }
 
-// générer la  citation
+// générer la citation
 var phrase1 = "";
 var position1;
 
