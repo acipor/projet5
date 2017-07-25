@@ -77,13 +77,13 @@ switch(nbCitations) {
         console.log("\nVoici "+ nbCitations +" citation(s) générée(s) avec le type de générateur no: " + typeGen ); 
         // boucle sur le nb citations
         for (j = 0; j < nbCitations; j++) { 
-                var phrase1 = "";
-                var position1;
+                var phrase = "";
+                var position;
                         for ( var i = 0 ;i < typeGenerateur[numGen].length ; i++) {
-                                    position1 = random (typeGenerateur[numGen][i]);    
-                                    phrase1 =  phrase1 + " " + typeGenerateur[numGen][i][position1];
+                                    position = random (typeGenerateur[numGen][i]);    
+                                    phrase =  phrase + " " + typeGenerateur[numGen][i][position];
                         }
-                console.log( phrase1);
+                console.log( phrase);
                                            } // fin for nb citations
         break;
     default:
